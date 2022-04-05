@@ -1,7 +1,16 @@
-gflet pronoun = ['the','our'];
-let adj = ['great', 'big' ];
-let noun = ['jogger','racoon'];
-let randopr = Math.floor(Math.random() * (pronoun.length - 0)) + 0;
-let randomad = Math.floor(Math.random() * (adj.length - 0)) + 0;
-let randomnoun = Math.floor(Math.random() * (noun.length - 0)) + 0;
-console.log(pronoun[randopr] + adj[randomad] + noun[randomnoun] +".com")
+let pronoun = ["the", "our"];
+let adj = ["great", "big"];
+let noun = ["jogger", "racoon"];
+let dom = [".com ",".cl ",".uk ",".cl "]
+
+
+for (let a = 0; a < pronoun.length; a++) {
+  for (let b = 0; b < adj.length; b++) {
+    for (let c = 0; c < noun.length; c++) {
+        for (let d = 0; d < dom.length; d++) {
+            console.log(pronoun[a] + adj[b] + noun[c]+ dom[d]);
+          }
+      
+    }
+  }
+}
